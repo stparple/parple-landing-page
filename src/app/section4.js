@@ -29,7 +29,7 @@ const Section4 = () => {
                     textAlign={['center', 'center', 'left', 'left']}
                     m={['','','20px', '20px']}
                     mt={['', '', '50px', '50px']}
-                    pr={['', '', '100px', '100px']}
+                    pr={['', '', '0px', '100px']}
                 >
                     <Text
                     letterSpacing={'2px'}

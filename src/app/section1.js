@@ -12,7 +12,7 @@ const Section1 = () => {
         align={'center'}
         alignContent={'center'}
         mb={'50px'}
-        pl={['10px', '10px', '100px', '100px']}
+        pl={['10px', '10px', '50px', '100px']}
         pr={['10px', '10px', '0px', '0px']}
         mt={['20px', '20px', '50px', '50px']}
       >
@@ -32,7 +32,7 @@ const Section1 = () => {
           <Text
             m={['auto', 'auto', '0px', '0px']}
             align={'center'}
-            pb={['20px', '20px', '50px', '50px']}
+            pb={['20px', '20px', '30px', '50px']}
             textAlign={['center', 'center', 'left', 'left']}
           >
             Getting to and from your favourite events has never been this convininet.
@@ -45,7 +45,7 @@ const Section1 = () => {
               h={'50px'}
               w={['100%', '100%', '85%', '85%']}
             />
-            <Button colorScheme='blackAlpha' variant='solid' h={'50px'} w={['50%', '50%', '100px', '100px']} m={'auto'} bg={'black'}>
+            <Button colorScheme='blackAlpha' variant='solid' h={'50px'} w={['50%', '50%', '100px', '100px']} m={'auto'} bg={'black'} fontSize={['', '', '12px', '15px']}>
               Join Waitlist
             </Button>
           </Stack>

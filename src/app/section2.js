@@ -28,7 +28,7 @@ const Section2 = () => {
                     textAlign={['center', 'center', 'left', 'left']}
                     m={['auto','auto','20px', '20px']}
                     mt={['', '', '50px', '50px']}
-                    pr={['10px', '10px', '100px', '100px']}
+                    pr={['', '', '0px', '100px']}
                 >
                     <Text
                     letterSpacing={'2px'}

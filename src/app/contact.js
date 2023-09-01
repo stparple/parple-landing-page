@@ -19,9 +19,10 @@ const Contact = () => {
                 bgColor={'#F3913A'}
                 p={'10px'}
                 borderRadius={'10px'}
-                w={['30%', '30%', '8%', '8%']}
             >
-                Contact Us
+                <Text m={'auto'}>
+                    Contact Us
+                </Text>
             </Box>
             <Box
                 pt={['', '', '10px', '10px']}
@@ -41,8 +42,8 @@ const Contact = () => {
             >
                 <Box
                     m={'auto'}
-                    mt={['20px', '20px', '50px', '50px']}
-                    mb={['20px', '20px', '50px', '50px']}
+                    mt={['20px', '20px', '30px', '50px']}
+                    mb={['20px', '20px', '30px', '50px']}
                     bg={'#f3f3f3'}
                     borderRadius={'20px'}
                     pt={'50px'}

@@ -23,8 +23,8 @@ const Section3 = () => {
                     m={['auto','auto','20px', '20px']}
                     pt={['50px', '50px', '70px', '70px']}
                     pb={['10px', '10px', '', '']}
-                    pl={['0px', '0px', '100px', '100px']}
-                    pr={['10px', '10px', '100px', '100px']}
+                    pl={['0px', '0px', '50px', '100px']}
+                    pr={['10px', '10px', '50px', '100px']}
                 >
                     <Text
                     letterSpacing={'2px'}
@@ -41,7 +41,7 @@ const Section3 = () => {
                             <Heading as={'h6'} fontSize={'20px'}>
                             <ArrowRightIcon color={'#F3913A'} display={['none', 'none', 'inline', 'inline']} />  Search for Events Near You
                             </Heading>
-                            <Text pb={['20px', '20px', '40px', '40px']} color={'#BFBFBF'}>
+                            <Text pb={['20px', '20px', '20px', '40px']} color={'#BFBFBF'}>
                             Discover local events effortlessly. Find what's happening nearby. 
                             Elevate your experiences with Parple's event search. Your city, your events.
                             </Text>

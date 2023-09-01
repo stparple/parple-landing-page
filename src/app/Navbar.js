@@ -51,7 +51,7 @@ export default function Simple() {
           <HStack spacing={8} alignItems={'center'}>
             <Stack spacing={0} direction={'row'}>
               <Box>
-                <Image src='asset/favicon.svg' />
+                <Image src='asset/favicon.svg' w={'100%'} h={'100%'} />
               </Box>
               <Box
               pt={'25px'}
@@ -59,12 +59,13 @@ export default function Simple() {
                 arple
               </Box>
             </Stack>
-            <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex'}} ml={['none ', 'none', '900px', '900px']}>
+            
+          </HStack>
+          <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex'}} ml={['none ', 'none', '250px', '800px']}>
               {Links.map((link) => (
                 <NavLink key={link}>{link}</NavLink>
               ))}
             </HStack>
-          </HStack>
           <Flex alignItems={'center'}>
             <Menu>
               <MenuList>
