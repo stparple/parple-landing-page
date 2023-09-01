@@ -36,19 +36,24 @@ const Contact = () => {
                 m={'auto'}
                 mr={['10px', '10px', '100px', '100px']}
                 ml={['10px', '10px', '100px', '100px']}
-                bg={'#f3f3f3'}
+                bg={'#F3913A'}
                 borderRadius={'20px'}
             >
                 <Box
-                    ml={['10px', '10px', '100px', '100px']}
-                    mr={['10px', '10px', '100px', '100px']}
+                    m={'auto'}
+                    mt={['20px', '20px', '50px', '50px']}
+                    mb={['20px', '20px', '50px', '50px']}
+                    bg={'#f3f3f3'}
+                    borderRadius={'20px'}
                     pt={'50px'}
-                    mb={'20px'}
+                    pb={'50px'}
+                    pr={'50px'}
+                    pl={'50px'}
                 >
                     <FormControl
                         mb={'10px'}
                     >
-                        <Stack direction={'row'}><CheckCircleIcon color={'#F3913A'} mb={'50px'} mt={'5px'} /> <Text>Say Hi</Text> </Stack>
+                        <Stack direction={'row'}><CheckCircleIcon color={'#F3913A'} mb={['20px', '20px', '50px', '50px']} mt={'5px'} /> <Text>Say Hi</Text> </Stack>
                         <FormLabel>Name</FormLabel>
                         <Input type='name' placeholder='Name' w={['100%', '100%', '500px', '500px']} bg={'white'} />
                     </FormControl>
@@ -78,7 +83,7 @@ const Contact = () => {
                     </Button>
                 </Box>
 
-                <Box></Box>
+                
             </Stack>
 
         </>
