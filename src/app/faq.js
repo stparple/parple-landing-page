@@ -35,7 +35,7 @@ const FaqSection = () => {
         <Stack id="faq" className='id-section' data-aos="fade-right" direction={'row'} mt={'50px'} w={'100%'}>
             <Stack className="container-fluid" direction={'row'}>
                 <Box className="col-md-1" w={['10px', '10px', '50px', '100px']}></Box>
-                <Stack className="col-md-10" direction={'column'} m={'auto'}>
+                <Stack className="col-md-10" direction={'column'} m={'auto'} w={['100%', '100%', '100%', '700px']}>
                     <Heading as="h4" color="#FB923C">
                         Frequently Asked Questions
                     </Heading>

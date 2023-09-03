@@ -7,7 +7,6 @@ const Section1 = () => {
   return (
     <div>
       <Stack className='div1'
-        data-aos="fade-up"
         direction={['column', 'column', 'row', 'row']}
         align={'center'}
         alignContent={'center'}
