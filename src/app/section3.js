@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Stack, Text, Heading, Image, UnorderedList, ListItem } from '@chakra-ui/react';
+import { Box, Stack, Text, Heading, Img, UnorderedList, ListItem } from '@chakra-ui/react';
 import { ArrowRightIcon } from '@chakra-ui/icons'
 import React from 'react';
 
@@ -63,7 +63,7 @@ const Section3 = () => {
                     w={['100%', '100%', '100%', '100%']}
                     h={'500px'}   
                 >
-                    <Image src='/asset/phone3.png' m={'auto'} h={'100%'} />
+                    <Img src='/asset/phone3.png' m={'auto'} h={'100%'} />
                 </Box>
             </Stack>
         </div>

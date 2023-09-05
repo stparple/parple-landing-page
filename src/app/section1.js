@@ -1,6 +1,6 @@
 'use client'
 
-import { Box, Stack, Text, Heading, Input, Button, Image } from '@chakra-ui/react';
+import { Box, Stack, Text, Heading, Input, Button, Img } from '@chakra-ui/react';
 import React from 'react';
 
 const Section1 = () => {
@@ -53,7 +53,7 @@ const Section1 = () => {
           w={['100%', '100%', '100%', '100%']}
           h={'500px'}
         >
-          <Image src='/asset/phone1.png' m={'auto'} h={'100%'} />
+          <Img src='/asset/phone1.png' m={'auto'} h={'100%'} />
         </Box>
       </Stack>
     </div>
