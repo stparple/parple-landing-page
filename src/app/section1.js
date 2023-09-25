@@ -2,10 +2,54 @@
 
 import { Box, Stack, Text, Heading, Input, Button, Img } from '@chakra-ui/react';
 import React from 'react';
+import Axios from 'axios';
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Section1 = () => {
+
+    // Create state to store the email input value
+    const [email, setEmail] = useState('');
+    const [isSending, setIsSending] = useState(false); // State for sending/loading state
+
+    // Function to handle the email input change
+    const handleEmailChange = (event) => {
+      setEmail(event.target.value);
+    };
+  
+    // Function to handle the button click and make the POST request
+    const handleJoinWaitlist = () => {
+      setIsSending(true); // Set loading state to true
+      // Create a data object with the email value
+      const data = {
+        email: email,
+      };
+  
+      // Make a POST request using Axios (you may need to configure the URL)
+      Axios.post('https://paprle-server.onrender.com/waitlist', data)
+        .then((response) => {
+          // Handle success, e.g., show a success message
+          console.log('POST request successful', response);
+          toast.success('Email Added To Wait List');
+          // alert('POST request successful', response);
+          setIsSending(false); 
+        })
+        .catch((error) => {
+          // Handle errors, e.g., show an error message
+          console.error('Error making POST request', error);
+          // alert('Error making POST request', error);
+          toast.error('Failed To Add Email to Wait List');
+          setIsSending(false); 
+        });
+    };
+
   return (
     <div>
+      <div><Toaster  
+      position="top-center"
+      reverseOrder={false}
+      />
+  </div>
       <Stack className='div1'
         direction={['column', 'column', 'row', 'row']}
         align={'center'}
@@ -43,10 +87,12 @@ const Section1 = () => {
               bg={'#d9d9d9'}
               h={'50px'}
               w={['100%', '100%', '85%', '85%']}
+              value={email} // Set the input value
+              onChange={handleEmailChange} // Handle input change
             />
-            <Button colorScheme='blackAlpha' variant='solid' h={'50px'} w={['50%', '50%', '100px', '100px']} m={'auto'} bg={'black'} fontSize={['', '', '12px', '15px']}>
+            <Button onClick={handleJoinWaitlist} colorScheme='blackAlpha' variant='solid' h={'50px'} w={['50%', '50%', '100px', '100px']} m={'auto'} bg={'black'} fontSize={['', '', '12px', '15px']} loadingText="Please wait..."  isLoading={isSending}  isDisabled={isSending} >
               Join Waitlist
-            </Button>
+              </Button>
           </Stack>
         </Box>
         <Box className='phone1'
