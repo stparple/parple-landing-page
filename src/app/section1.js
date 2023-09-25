@@ -45,6 +45,15 @@ const Section1 = () => {
       const waitlistRef = collection(db, 'waitlist');
       const emailQuery = query(waitlistRef, where('email', '==', email));
       const querySnapshot = await getDocs(emailQuery);
+
+       // Regular expression for email validation
+       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+       if (!emailRegex.test(email)) {
+         // If the email format is invalid, reject the promise
+         toast.error("Invalid email format" );
+         return;
+       }
   
       if (querySnapshot.size > 0) {
         // Email already exists in the "waitlist" collection, show an error toast
